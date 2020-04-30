@@ -1,0 +1,978 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+html, body {
+    font-family: "Open Sans", "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding: 0 1.3rem;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.num {
+    font-size: 20px;
+    font-weight: 700;
+    vertical-align: top;
+    line-height: 2.5rem;
+    margin-right: .5rem;
+    position: relative;
+}
+
+.num:after {
+    content: "";
+    position: absolute;
+    bottom: -.6rem;
+    height: .6rem;
+    border-radius: 30px;
+    background: #5e42b0;
+    width: 100%;
+    left: 0;
+}
+
+.heading {
+    font-size: 8rem;
+    font-weight: 700;
+    color: #e7e7e7;
+    text-transform: uppercase;
+}
+
+.text {
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    color: #000000;
+}
+
+/** Banner **/
+.banner {
+    height: 96rem;
+    background: #0a0e34;
+    position: relative;
+}
+
+.banner.header:before {
+    background-image: url(../img/football_1920.jpg);
+}
+
+.banner.footer:before {
+    background-image: url(../img/game_1920.jpg);
+}
+
+.banner:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    position: absolute;
+    background-size: cover;
+}
+
+.banner-logo {
+    width: 19.1rem;
+    padding: 4.5rem 0;
+    margin: 0 auto;
+}
+
+.banner-wrapper {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-content {
+    height: 100%;
+}
+
+.banner-title-text .title-text {
+    font-size: 9rem;
+    letter-spacing: .4rem;
+    font-weight: 800;
+    line-height: 9.3rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.banner-title-text .title-text:last-child {
+    text-align: right;
+}
+
+.banner-title.footer-title {
+    justify-content: center;
+    display: flex;
+}
+
+.banner-title-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .banner-title-text {
+    height: calc(9.3rem * 2 + 42.5rem);
+    justify-content: center;
+    margin-top: 1.8rem;
+}
+
+.footer .banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .download-buttons {
+    margin-top: 14.5rem;
+}
+
+.footer-title .banner-title-text .title-text {
+    font-size: 8rem;
+    letter-spacing: .4rem;
+    line-height: 9.5rem;
+    white-space: nowrap
+}
+
+.banner-title-icon {
+    width: 13rem;
+    margin-right: 3rem;
+    height: 13.5rem;
+    border-radius: 3rem;
+    background: linear-gradient(#7554d5, #51379b);
+    box-sizing: border-box;
+    padding: 2rem 1.5rem;
+}
+
+.banner-title-icon svg {
+    fill: #ffffff;
+    width: 10rem;
+}
+
+.subtitle-text {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-indent: .5rem;
+    color: #a496ca;
+}
+
+.download-buttons {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.download-button {
+    height: 8rem;
+    min-width: 31rem;
+    background: #5e42b0;
+    border-radius: 5rem;
+    text-transform: uppercase;
+    margin: 0 2.5rem;
+    box-sizing: border-box;
+    padding: 1.2rem 3rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.download-button.android {
+    padding: 1.2rem 3rem 1.2rem 5rem;
+}
+
+.download-button-icon {
+    width: 7rem;
+    height: 5rem;
+    box-sizing: border-box;
+}
+
+.download-button-icon svg {
+    fill: #ffffff;
+    height: 5rem;
+}
+
+.download-button-text {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-text {
+    font-size: 1.4rem;
+    color: #ffffff;
+    letter-spacing: .1rem;
+}
+
+/** Features **/
+
+.feature-section {
+    position: relative;
+}
+
+.feature-section-row.white {
+    background: #ffffff;
+}
+
+.feature-section-row.gray {
+    background: #f6f4fa;
+}
+
+.feature-section-row.purple {
+    background: #5e42b0;
+}
+
+.feature-section-row.deep-purple {
+    background: #0a0e34;
+}
+
+.feature-section-row.collaboration {
+    min-height: 24rem;
+}
+
+.athlets-feature-section .feature-section-content {
+    width: 72rem;
+}
+
+.players-feature-section .feature-section-content {
+    width: 76rem;
+}
+
+.athlets-feature-section:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/footballer_566.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 72em - (0.35 * 72em));
+    padding: 4rem 0;
+    z-index: 2;
+}
+
+.players-feature-section:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/basketballer_991.png);
+    background-repeat: no-repeat;
+    background-position: calc(80em);
+}
+
+.feature-section-title {
+    margin-top: 9rem;
+    margin-bottom: 2.5rem;
+}
+
+.feature-section .feature-section-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.feature-section:nth-child(odd) .feature-section-container {
+    justify-content: flex-end;
+}
+
+.feature-section-row .row-title .title {
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    color: #c1c1c1;
+    font-weight: 800;
+    line-height: 3.6rem;
+    letter-spacing: .2rem;
+}
+
+.feature-section-row .row-description {
+    margin-top: 2rem;
+}
+
+.feature-section-row:nth-child(n+2) .feature-section-content {
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+}
+
+.feature-section-row.deep-purple .row-title .num {
+    color: #5e42b0;
+}
+
+.feature-section-row.purple .row-description,
+.feature-section-row.deep-purple .row-description {
+    color: #ffffff
+}
+
+.feature-section-row.purple .row-title .num:after,
+.feature-section-row.deep-purple .row-title .num:after {
+    background: #ffffff;
+}
+
+/*Steps*/
+
+.step-section {
+    position: relative;
+}
+
+.step-num {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 50%;
+    width: 9vw;
+    height: 8vw;
+    min-width: 11.5rem;
+    min-height: 11rem;
+    background: #5e42b0;
+    text-align: center;
+    color: #ffffff
+}
+
+.step-num .num {
+    top: 38%;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin: 0;
+}
+
+.step-num .num:after {
+    background: #8f7bc8;
+}
+
+.step-image {
+    width: 50%;
+    font-size: 0;
+}
+
+.step-image img {
+    width: 100%;
+}
+
+.step-content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.step-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.step-description.text {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    letter-spacing: .1rem;
+}
+
+.step-description,
+.step-heading {
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.step-section:nth-child(odd) .step-description,
+.step-section:nth-child(odd) .step-heading {
+    padding-left: 12.8rem;
+    margin-right: auto;
+}
+
+.step-section:nth-child(even) .step-description,
+.step-section:nth-child(even) .step-heading {
+    padding-right: 12.8rem;
+    margin-left: auto;
+}
+
+.step-section:nth-child(even) .step-content {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) and (min-width: 321px) {
+    .container {
+        width: 100%;
+        padding: 0 3rem;
+        box-sizing: border-box;
+    }
+
+    .heading {
+        font-size: 8rem;
+        line-height: 10.3rem;
+    }
+
+    .text {
+        font-size: 1.5rem;
+        line-height: 2.7rem;
+        letter-spacing: .12rem;
+    }
+
+    .num {
+        margin-right: .5rem;
+        font-size: 1.8rem;
+    }
+
+    .banner.header:before {
+        background-image: url(../img/football_767.jpg);
+    }
+
+    .banner.footer:before {
+        background-image: url(../img/game_767.jpg);
+    }
+
+    .banner-content, .footer .banner-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .banner-wrapper.container {
+        padding: 0;
+    }
+
+    .footer .banner-logo {
+        width: 20.5rem;
+        padding: 2rem;
+    }
+
+    .header .banner-logo {
+        width: 20.5rem;
+        padding: 4rem;
+    }
+
+    .header .banner-title-text {
+        height: calc(9.3rem * 2 + 26.5rem);
+        margin-left: 11%;
+        margin-top: 1rem;
+    }
+
+    .banner-title-text .title-text {
+        font-size: 7.8vw;
+        letter-spacing: .6rem;
+        line-height: 10vw;
+    }
+
+    .banner-title-text .title-text:last-child {
+        text-align: left;
+        margin-left: 11rem;
+    }
+
+    .download-buttons {
+        margin: 9.5rem 0;
+        flex-wrap: wrap;
+    }
+
+    .download-button {
+        width: 31rem;
+        margin: 1.5rem 1.5rem;
+        height: 8rem;
+        padding: 1.5rem 2.5rem;
+    }
+
+    .download-button-icon {
+        width: 6.5rem;
+        text-align: center;
+    }
+
+    .download-button-icon svg {
+        height: 4.5rem;
+    }
+
+    .download-button-text {
+        margin-top: .8rem;
+        margin-left: .8rem;
+    }
+
+    .download-button.android {
+        padding: 1.5rem 2.8rem 1.2rem 4.5rem;
+    }
+
+    .button-text {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+        letter-spacing: 0;
+    }
+
+    .athlets-feature-section .feature-section-content {
+        width: 44.5rem;
+    }
+
+    .players-feature-section .feature-section-content {
+        width: 40rem;
+    }
+
+    .feature-section-title {
+        margin-top: 6rem;
+        margin-bottom: .5rem;
+    }
+
+    .feature-section-row .row-title .title {
+        font-size: 3.2rem;
+        line-height: 3.8rem;
+    }
+
+    .feature-section-row .row-description {
+        margin-top: 2rem;
+    }
+
+    .feature-section-row:nth-child(n+2) .feature-section-content {
+        margin-top: 3rem;
+        margin-bottom: 3.6rem;
+    }
+
+    .athlets-feature-section:before {
+        background: url(../img/footballer_497.png);
+        background-position: calc(100% - 43rem);
+        background-repeat: no-repeat;
+        padding: 6.5rem 0;
+    }
+
+    .players-feature-section:before {
+        background: url(../img/basketballer_436.png);
+        background-position: calc(33em);
+        background-repeat: no-repeat;
+        top: -4.5rem;
+    }
+
+    .players-feature-section .container {
+        padding: 0 3rem;
+    }
+
+    .feature-section-row.collaboration {
+        min-height: unset;
+    }
+
+    .step-content {
+        flex-direction: column;
+    }
+
+    .step-image {
+        width: 100%;
+        position: relative;
+    }
+
+    .step-description, .step-heading {
+        width: 100%;
+    }
+
+    .step-text {
+        width: 100%;
+        margin-top: 6.5rem;
+        margin-bottom: 9.6rem;
+    }
+
+    .step-description.text {
+        font-size: 2.7rem;
+        letter-spacing: 0rem;
+        line-height: 3rem;
+        margin-top: 1.7rem;
+    }
+
+    .step-section:nth-child(odd) .step-description, .step-section:nth-child(odd) .step-heading {
+        padding-left: 3.2rem;
+        padding-right: 5rem;
+        margin-right: auto;
+    }
+
+    .step-section:nth-child(even) .step-description, .step-section:nth-child(even) .step-heading {
+        padding-left: 3.2rem;
+        padding-right: 5rem;
+        margin-right: auto;
+    }
+
+    .step-num {
+        left: 3.3rem;
+        margin: unset;
+        top: calc(100% - 9rem);
+        width: 11.5rem;
+        height: 11.5rem;
+        color: #ffffff;
+    }
+
+    .step-num .num {
+        font-size: 2.4rem;
+        line-height: 4.2rem;
+        top: 25%;
+    }
+
+    .step-section:nth-child(even) .step-content {
+        flex-direction: column;
+    }
+
+    .footer .banner-title.footer-title {
+        padding: 13rem 0 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .banner-title-icon {
+        margin-right: 0;
+    }
+
+    .footer-title .banner-title-text .title-text {
+        margin-top: 7rem;
+        line-height: 10.4vw;
+        font-size: 10.4vw;
+
+    }
+
+    .footer .banner-title-text {
+        margin: 0;
+    }
+
+    .footer .subtitle-text {
+        line-height: 4.7vw;
+        margin-top: 1.5rem;
+        font-size: 4.7vw;
+    }
+
+    .footer .banner-title-text {
+        align-items: center;
+    }
+
+    .footer .banner-logo {
+    }
+
+    .footer .download-buttons {
+        margin: 2rem 0;
+    }
+
+    .banner-title-icon svg {
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        width: 100%;
+        padding: 0 2rem;
+        box-sizing: border-box;
+    }
+
+    .heading {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    .text {
+        font-size: 1.5rem;
+        line-height: 2.7rem;
+        letter-spacing: .12rem;
+    }
+
+    .num {
+        margin-right: .5rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .num:after {
+        bottom: -.4rem;
+        height: .4rem;
+    }
+
+    .banner {
+        height: 100vh;
+    }
+
+    .banner.header:before {
+        background-image: url(../img/football_767.jpg);
+    }
+
+    .banner.footer:before {
+        background-image: url(../img/game_767.jpg);
+    }
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .header .banner-title-text {
+        height: 100%;
+    }
+
+    .banner-logo {
+        width: 13rem;
+        padding: 3.5rem;
+    }
+
+    .banner-title.header-title {
+        padding: 6.5rem 0 0;
+    }
+
+    .banner-title-text .title-text {
+        font-size: 2.7rem;
+        letter-spacing: .2rem;
+        line-height: 3.5rem;
+    }
+
+    .banner-title-text .title-text:last-child {
+        text-align: left;
+        margin-left: 4.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .download-buttons {
+        margin: 0 0 7.5rem 0;
+        flex-direction: column;
+    }
+
+    .download-button {
+        width: 100%;
+        min-width: unset;
+        margin: .8rem 0;
+        height: 3.5rem;
+        padding: .5rem 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .download-button-icon {
+        width: 3.5rem;
+        text-align: center;
+    }
+
+    .download-button-icon svg {
+        height: 2.5rem;
+    }
+
+    .download-button-text {
+        margin-top: 0;
+        margin-left: 0;
+        padding-right: 3.5rem;
+    }
+
+    .apple .download-button-text {
+        padding-right: 2rem;
+    }
+
+    .download-button.android {
+        padding: .5rem 0;
+    }
+
+    .button-text {
+        font-size: .8rem;
+        line-height: 1.2rem;
+        letter-spacing: 0;
+    }
+
+    .athlets-feature-section .feature-section-content {
+        width: 100%;
+    }
+
+    .players-feature-section .feature-section-content {
+        width: 40rem;
+    }
+
+    .feature-section-title {
+        margin-top: 1.8rem;
+        margin-bottom: 26rem;
+    }
+
+    .feature-section-row .row-title .title {
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+    }
+
+    .feature-section-row .row-description {
+        margin-top: 2rem;
+        font-size: 1.4rem;
+        line-height: 19px;
+    }
+
+    .feature-section-row:nth-child(n+2) .feature-section-content {
+        margin-top: 5.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .athlets-feature-section:before {
+        background: url(../img/footballer_192.png);
+        background-position: center 8rem;
+        background-repeat: no-repeat;
+    }
+
+    .players-feature-section:before {
+        background: url(../img/basketballer_302.png);
+        background-position: center 8rem;
+        background-repeat: no-repeat;
+    }
+
+    .feature-section-row.collaboration {
+        min-height: unset;
+    }
+
+    .step-content {
+        flex-direction: column;
+    }
+
+    .step-image {
+        width: 100%;
+        position: relative;
+    }
+
+    .step-description, .step-heading {
+        width: 100%;
+        font-size: 3rem;
+    }
+
+    .step-text {
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 8rem;
+    }
+
+    .step-description.text {
+        font-size: 1.8rem;
+        letter-spacing: 0;
+        line-height: 2rem;
+        margin-top: .5rem;
+    }
+
+    .step-section:nth-child(odd) .step-description, .step-section:nth-child(odd) .step-heading {
+        padding-left: 2rem;
+        padding-right: 19px;
+        margin-right: auto;
+    }
+
+    .step-section:nth-child(even) .step-description, .step-section:nth-child(even) .step-heading {
+        padding-left: 2rem;
+        padding-right: 19px;
+        margin-right: auto;
+    }
+
+    .step-num {
+        left: 2rem;
+        margin: unset;
+        top: 29.5rem;
+        width: 7rem;
+        height: 7rem;
+        color: #ffffff;
+        min-width: unset;
+        min-height: unset;
+    }
+
+    .step-num .num {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        top: 25%;
+    }
+
+    .step-section:nth-child(even) .step-content {
+        flex-direction: column;
+    }
+
+    .footer .banner-title.footer-title {
+        padding: 4.5rem 0 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .banner-title-icon {
+        margin-right: 0;
+        width: 7.5rem;
+        height: 7.5rem;
+        border-radius: 1.5rem;
+        padding: 1.3rem 1rem;
+    }
+
+    .footer-title .banner-title-text .title-text {
+        font-size: 3.3rem;
+        margin-top: 5rem;
+        line-height: 3.3rem;
+        letter-spacing: 0;
+    }
+
+    .footer .banner-title-text {
+        margin: 0;
+    }
+
+    .footer .subtitle-text {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+
+    .footer .banner-title-text {
+        align-items: center;
+    }
+
+    .footer .banner-logo {
+        padding: 2rem;
+    }
+
+    .footer .download-buttons {
+        margin: 5rem 0 0;
+    }
+
+    .banner-title-icon svg {
+        width: 100%;
+    }
+}
+
+@media (min-width: 961px) {
+    .step-heading.heading {
+        font-size: 4.1vw;
+        margin-bottom: 4.6vw;
+        white-space: nowrap
+    }
+}
+
+@media (max-width: 420px) and (min-width: 321px) {
+    .feature-section-row .row-title .title {
+        font-size: 7.6vw;
+    }
+
+    .feature-section-title.heading {
+        font-size: 19vw;
+    }
+
+    .step-heading.heading {
+        font-size: 19vw;
+        line-height: 19vw;
+    }
+}
+
+@media (max-width: 960px) and (min-width: 769px) {
+    .footer .banner-title.footer-title {
+        padding: 12.5rem 0 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-title .banner-title-text .title-text {
+        font-size: 8rem;
+        margin-top: 7rem;
+        line-height: 8rem;
+    }
+
+    .footer .download-buttons {
+        margin: 3.5rem 0;
+    }
+
+    .step-section:nth-child(odd) .step-description, .step-section:nth-child(odd) .step-heading {
+        padding-left: 8rem;
+    }
+
+    .step-heading.heading {
+        font-size: 4rem;
+    }
+}
